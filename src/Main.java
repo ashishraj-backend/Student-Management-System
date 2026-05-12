@@ -11,6 +11,10 @@ public class Main {
 
         StudentDAO studentDAO = new StudentDAO();
 
+        // Add Student
         studentDAO.addStudent(student);
+
+        // View Students
+        studentDAO.viewStudents();
     }
 }
