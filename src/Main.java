@@ -1,5 +1,16 @@
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Student Management System Started");
+
+        Student student = new Student(
+                1,
+                "Ashish Raj",
+                "Computer Science",
+                20
+        );
+
+        StudentDAO studentDAO = new StudentDAO();
+
+        studentDAO.addStudent(student);
     }
 }
